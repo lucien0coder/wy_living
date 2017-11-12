@@ -9,7 +9,6 @@
   <title>文章详情</title>
 </head>
 <body>
-  <!-- 文章详情 组件 -->
   <section class="section">
     <div class="content">
       <h1>Hello World</h1>
@@ -102,8 +101,6 @@
       <h6>Sixth level</h6>
       <p>Cras in nibh lacinia, venenatis nisi et, auctor urna. Donec pulvinar lacus sed diam dignissim, ut eleifend eros accumsan. Phasellus non tortor eros. Ut sed rutrum lacus. Etiam purus nunc, scelerisque quis enim vitae, malesuada ultrices turpis. Nunc vitae maximus purus, nec consectetur dui. Suspendisse euismod, elit vel rutrum commodo, ipsum tortor maximus dui, sed varius sapien odio vitae est. Etiam at cursus metus.</p>
     </div>
-
-    <!-- 评论列表 组件-->
     <hr>
     <article class="media">
       <figure class="media-left">
@@ -139,27 +136,25 @@
       </article>
   </section>
 
-  
-  <!-- 详情底部导航栏 组件-->
-  <nav class="navbar is-fixed-bottom tabs is-toggle is-fullwidth is-large">
-    <ul>
-      <li class="is-active">
-        <a>
-          <span class="icon is-small"><i class="fa fa-image"></i></span>
-        </a>
-      </li>
-      <li>
-        <a>
-          <span class="icon is-small"><i class="fa fa-music"></i></span>
-        </a>
-      </li>
-      <li>
-        <a>
-          <span class="icon is-small"><i class="fa fa-film"></i></span>
-        </a>
-      </li>
-    </ul>
-  </nav>
-
+  <!-- 输入评论模板组件 -->
+  <div class="modal is-active">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <!-- 输入框组件 -->
+      <div class="field">
+        <label class="label has-text-white-bis">Comment</label>
+        <div class="control">
+          <textarea class="textarea" placeholder="Textarea" rows="8"></textarea>
+        </div>
+      </div>
+      <!-- 发送按钮组件 -->
+      <div class="field is-grouped is-grouped-right">
+        <div class="control">
+          <button class="button is-link">Submit</button>
+        </div>
+      </div>
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
 </body>
 </html>
